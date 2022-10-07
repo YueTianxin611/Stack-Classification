@@ -1,7 +1,5 @@
 """
 app.py 云版本-第一版
-Finished on 2019/07/10
-Author: Dorothy.S
 """
 from flask import Flask, jsonify
 app = Flask(__name__)
