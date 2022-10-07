@@ -135,8 +135,3 @@ def insert_data(data,user,password,host,database,table_name,features):
     connect = create_engine("mysql+pymysql://"+user+":"+password+"@"+host+"/"+database)
     pd.io.sql.to_sql(data_in, table_name, connect, schema=database, if_exists="append",index=False)
     return
-# insert_data(data,'intern','123456','10.75.4.20','ml_competition','reg_kgl_0005_test',['X5','X6','X8'])
-
-
-data = pd.read_excel('finalresult.xls')
-insert_data_all(data,'intern','123456','10.75.4.20','financial_dept','lyy')
